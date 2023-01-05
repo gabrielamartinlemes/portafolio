@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <title>Biografía</title>
+</head>
+<body>
+  <header class="header">
+    <a href="#home"><img src="imagenes/GABRIELA-logo.png" class="logo" alt="MDN"></a>
+    <nav class="topnav">
+       
+        <div id="myLinks">
+          <strong><a href="inicio.html" class="inicio">Inicio</a></strong>
+          <strong><a href="biografia.html">Biografía</a></strong>
+          <strong><a href="proyectos.html">Proyectos</a></strong>
+          <strong><a href="contacto.html">Contacto</a></strong>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+    </header>
+    <div class="cuadro">
+    <div class="grid2">
+      <p class="frase1"> Soy Gabriela Martin, al finalizar la etapa del instituto decidí estudiar Turismo.<span id="dots">...</span><br><span id="more">Gracias a este grado he tenido la oportunidad de trabajar durante varios años en alojamientos turísticos, lo que me ha dado una gran experiencia laboral y personal en mi vida.
+        <br> Actualmente, soy participante del grupo del PFAE La Web de Tías, lugar de trabajo combinado con una gran formación relacionada con desarrollo y diseños de páginas web.<br>Por otro lado, he realizado varios cursos relacionados con idiomas, contabilidad, deportes e informática.<br>Mi objetivo es mejorarme día a día aprendiendo contenidos nuevos e interesantes.<br>Me considero una persona responsable, tranquila y trabajadora.</span></p>
+      <button onclick="myFunction()" id="botones">Leer más</button>
+    </div>
+    
+    <div class="silueta">
+      <img src="imagenes/miavatar-removebg-preview.png" class="imagen"   alt="MDN">
+    </div>
+  </div>
+    
+    
+    
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .cuadro {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+}
+
+        .silueta { grid-area: 1 / 1 / 4 / 3; }
+        .grid2 { grid-area: 1 / 3 / 4 / 5; }
+        .frase1{
+          margin-left: -10%;
+          font-size: 25px;
+          margin-top:10%;
+          text-align: left;
+          font-family: 'Sono', sans-serif;
+        }
+          #more {
+            display: none;
+            margin-left: 0%;
+            font-size: 25px;
+            font-family: 'Sono', sans-serif;
+          }
+          #botones{
+            margin-top: 2%;
+            margin-left: 30%;
+            font-size: 20px;
+            background-color: white;
+            font-family: 'Sono', sans-serif;
+        }
+        #botones:hover{
+          background-color:  rgb(26, 183, 223);; 
+        }
+        
+      
+        .topnav #myLinks {
+           display: none;
+      }
+      
+        .topnav a {
+          color:black;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          display: block;
+          text-align: right;
+          margin-right: 7%;
+          font-family: 'Sono', sans-serif;
+       }
+       .topnav #myLinks :hover{
+        color: white;
+        text-decoration-line:underline;
+       
+      }
+
+    
+  
+        .topnav a.icon {
+          background-color: white; 
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-top: 1%;
+      }
+        .logo{
+          margin-top: 3%;
+          margin-left: 36%;
+          width: 25%;
+      }
+        .header{
+          background-color:  rgb(26, 183, 223);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          
+        }
+        .silueta{
+          margin-top: 10%;
+          margin-left: 2%;
+          width: 100%;
+        }
+        .imagen{
+          width: 50%;
+        }
+
+         /* Este media es del móvil */
+              @media screen and ( max-width: 600px){
+
+            body{
+                background-color: white;
+            }
+            .logo{
+              margin-top: 3%;
+              margin-left: 36%;
+              width: 25%;
+        
+            }
+
+            .frase1{
+              
+              margin-left: -90%;
+              margin-top: 90%;
+              
+              
+            }
+
+            .silueta{
+              margin-left: 5%;
+              height: 45%;
+              margin-top: -15%;
+              
+        }
+        .imagen{
+          margin-top: 30%;
+          margin-left: 65%;
+        }
+
+            #botones{
+                margin-top: 2%;
+                margin-left: -15%;
+            }
+            .botones:hover{
+              background-color: rgb(26, 183, 223);; 
+        }
+            .oculto{
+            margin-left: 5%;
+          }
+
+          .topnav #myLinks :hover{
+        color: white;
+       
+      }
+            
+
+       
+   
+    </style>
+
+      <script>
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("botones");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Leer más"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Leer menos"; 
+          moreText.style.display = "inline";
+        }
+      }
+      function myFunction1() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+<script>
+
+</script>
+
+</body>
+</html>

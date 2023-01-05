@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+  <header class="header">
+    <a href="#home"><img src="imagenes/GABRIELA-logo.png"  class="logo" alt="MDN"></a>
+    <nav class="topnav">
+       
+        <div id="myLinks">
+          <strong><a href="inicio.html" class="inicio">Inicio</a></strong>
+          <strong><a href="biografia.html">Biografía</a></strong>
+          <strong><a href="proyectos.html">Proyectos</a></strong>
+          <strong><a href="contacto.html">Contacto</a></strong>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+    </header>
+    
+
+    <div class="contact_form">
+      <h3>No dude en contactar</h3>
+      <p class="frase_contacto">Con mucho gusto atiendo sus peticiones.</p>
+      <form action="*" method="post">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input class="contact_button" type="submit" value="Enviar">
+      </form>
+  </div>
+    
+    <div class="contact_information">
+        <p><strong>Datos de contacto</strong> </p>
+        <span><i class="email"></i>Email: email@example.com</span>
+        <span><i class="telefono"></i>Teléfono: 000 999 000</span>
+        <span><i class="ubicacion"></i>Ubicación: Lanzarote, España</span>
+    </div>
+    <img src="imagenes/teclado.jpg" class="imagencontacta" alt="contacta"/>
+
+    <style>
+       * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .oculto{
+            width: 30%;
+            display: none;
+            margin-left: 2%;
+            font-family: 'Sono', sans-serif;
+          }
+        .botones{
+            margin-top: 3%;
+        }
+        
+     
+        .topnav #myLinks {
+           display: none;
+      }
+      
+        .topnav a {
+          color:black;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: 'Sono', sans-serif;
+          display: block;
+          text-align: right;
+          margin-right: 7%;
+       }
+  
+        .topnav a.icon {
+          background-color: white; 
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-top: 1%;
+          font-family: 'Sono', sans-serif;
+      }
+
+      .topnav #myLinks :hover{
+        color: white;
+        text-decoration-line: underline;
+       
+      }
+     
+        .logo{
+            margin-top: 3%;
+            margin-left: 36%;
+            width: 25%;
+          }
+        .header{
+              background-color: rgb(26, 183, 223);;
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+            }
+        .imagencontacta{
+              margin-top: 10%;
+              width: 100%;
+              height: 200px;
+            }
+        .contact_form{
+            color: black;
+            width: 28%;
+            font-size: 1.5em;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 15px 1px  rgb(26, 183, 223);;
+            position: absolute;
+            margin-left: 65%;
+            margin-top: 3%;
+            font-family: 'Sono', sans-serif;
+            
+          }
+          p{
+            font-family: 'Sono', sans-serif;
+          }
+         
+        .contact_form h3{
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Sono', sans-serif;
+    }
+        .contact_form p{
+        margin-bottom: 1.5rem;
+        font-size: .9rem;
+        text-align: center;
+        font-family: 'Sono', sans-serif;
+      }
+        .contact_form form{
+        display: flex;
+        flex-direction: column;
+    }
+        .contact_form form input{
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .contact_button{
+          background-color:  rgb(26, 183, 223);;
+          font-family: 'Sono', sans-serif;
+        }
+        .contact_button:hover{
+          background-color: black; 
+          color: white;
+        }
+        .contact_information{
+          line-height: 2;
+          display: block;
+          width: 30vw;
+          margin-left: 15%;
+          margin-top: 6rem;
+          font-size: 25px;
+          font-family: 'Sono', sans-serif;
+          text-align: center;
+    }
+      .contact_information span{
+          display: block;
+          margin-top: .6rem;
+    }
+      .contact_information i{
+          margin-right: 1rem;
+    }
+
+
+        /* estilo movil */
+        @media screen and ( max-width: 600px){
+            body{
+                background-color: white;
+            }
+            .logo{
+              margin-top: 3%;
+              margin-left: 36%;
+              width: 25%;
+        
+            }
+          .contact_form{
+          width: 350px;
+          margin-left: 20%;
+          margin-top: 5%;
+        }
+        .contact_button:hover{
+          background-color:rgb(26, 183, 223);; 
+        }
+        .topnav #myLinks :hover{
+        color: white;
+       
+      }
+        .contact_information{
+          text-align: center;
+          margin-top: 82%;
+          width: 60vw;
+          margin-left:18% ;
+
+        }
+        .imagencontacta{
+              margin-top: 10%;
+              width: 110%;
+            }
+      }
+
+
+    </style>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>

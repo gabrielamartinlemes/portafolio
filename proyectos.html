@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <title>Proyectos</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home"><img src="imagenes/GABRIELA-logo.png" class="logo" alt="MDN"></a>
+        <nav class="topnav">
+           
+            <div id="myLinks">
+              <strong><a href="inicio.html" class="inicio">Inicio</a></strong>
+              <strong><a href="biografia.html">Biografía</a></strong>
+              <strong><a href="proyectos.html">Proyectos</a></strong>
+              <strong><a href="contacto.html">Contacto</a></strong>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </nav>
+        </header>
+            <h2 class="textoproyectos">Proyectos Realizados</h2>
+            <p class="descripcion">En estos meses he tenido la oportunidad de participar en el desarrollo de varias páginas webs.<br><br>
+              La primera es la asociación Talante Social, un grupo de tres personas que realizan proyectos y ayudan a los grupos más vulnerables del municipio.<br><br> 
+              Por otro lado, Boluntis, un grupo de bomberos voluntarios del municipio de tías.<br><br>
+              Por otra parte, he realizado un proyecto personal relacionado con las clases particulares y apoyo escolar.<br><br>
+            Finalmente he participado en un proyecto común denominado "Gymkhana Turística de Puerto del Carmen".<br> La idea principal del cliente es promocionar la isla de Lanzarote a turistas y visitantes. </p>
+        <div class="feature_cards">
+          
+          <a title="talantesocial" href="https://asociaciontalantesocial.wordpress.com/" target="_blank"><img src="imagenes/talantesocial-removebg-preview.png" class="talantesocial" alt="talantesocial"></a>
+            <img src="imagenes/bomberos-removebg-preview.png" class="bomberos" alt="bomberos">
+            <a title="clasesparticulares" href="página vertical_clases_apoyo ultimo/index.html" target="_blank"><img src="imagenes/lapiz.png" class="proyectopersonal" alt="proyectopersonal"></a>
+          
+         
+        </div>
+        
+        
+    
+
+    <style>
+         * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+       
+     
+        .topnav #myLinks {
+           display: none;
+      }
+      
+        .topnav a {
+          color:black;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: 'Sono', sans-serif;
+          display: block;
+          text-align: right;
+          margin-right: 7%;
+       }
+  
+        .topnav a.icon {
+          background-color: white; 
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-top: 1%;
+      }
+      .topnav #myLinks :hover{
+        color: white;
+        text-decoration-line:underline;
+       
+      }
+        .logo{
+          margin-top: 3%;
+          margin-left: 36%;
+          width: 25%;
+          }
+        .header{
+            background-color:rgb(26, 183, 223);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            }
+   
+
+        .feature_cards{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .feature_cards img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 4em 2em 2em 2em
+        }
+        .feature_cards img:hover{
+            background-color:rgb(26, 183, 223);
+        }
+
+
+        .textoproyectos{
+            text-align: center;
+            margin-top: 2%;
+            font-family: 'Sono', sans-serif;
+
+        }
+        .descripcion{
+          text-align: center;
+          margin-top: 2%;
+          font-size: 20px;
+          font-family: 'Sono', sans-serif;
+
+        }
+
+       
+         /* Este media es del móvil */
+         @media screen and ( max-width: 600px){
+
+              body{
+                  background-color: white;
+              }
+              .logo{
+                margin-top: 3%;
+                margin-left: 36%;
+                width: 25%;
+              }
+
+              .descripcion{
+                text-align: justify;
+                margin-top: 2%;
+                margin-left: 10%;
+                font-size: 20px;
+                font-family: 'Sono', sans-serif;
+                width: 85vw;
+              }
+              .topnav #myLinks :hover{
+                  color: white;
+       
+              }
+
+              .textoproyectos{
+              text-align: center;
+              margin-top: 2%;
+             
+              font-family: 'Sono', sans-serif;
+            }
+            .talantesocial{
+            width: 300px;
+            transform: translateY(120%);
+            transform: translatex(117%);
+              
+           }
+           .bomberos{
+            width: 300px;
+            transform: translate(7%, 115%);
+           
+           }
+
+           .proyectopersonal{
+            width: 300px;
+            transform: translate(-120%, 225%);
+           }
+          
+              
+              
+
+              
+              
+          
+          
+
+
+    </style>
+     <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>
